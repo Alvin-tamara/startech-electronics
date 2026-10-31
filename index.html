@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELECTROHUB | Everything Electronics, All in One Place</title>
+<meta name="description" content="Shop phones, laptops, TVs, gaming, audio, appliances and power gear at ELECTROHUB. Prices in Naira.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="announce" role="region" aria-label="Offers">
+  <p>Free delivery in Lagos on orders above ₦150,000 &nbsp;|&nbsp; Pay on delivery available &nbsp;|&nbsp; 12-month warranty on all phones</p>
+</div>
+
+<header class="site-header">
+  <div class="container bar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <a href="#top" class="logo" id="top">ELECTRO<span>HUB</span></a>
+    <form class="search" id="searchForm" role="search">
+      <label class="sr" for="searchInput">Search products</label>
+      <input id="searchInput" type="search" placeholder="Search phones, laptops, TVs..." autocomplete="off">
+      <button type="submit">Search</button>
+      <ul class="suggest" id="suggest" hidden></ul>
+    </form>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch to dark mode">🌙</button>
+      <button class="icon-btn" id="accountBtn" aria-label="My account">👤<span class="lbl">Account</span></button>
+      <button class="icon-btn" id="wishBtn" aria-label="Wishlist">♡<span class="badge" id="wishCount">0</span></button>
+      <button class="icon-btn" id="cartBtn" aria-label="Shopping cart">🛒<span class="badge" id="cartCount">0</span></button>
+    </div>
+  </div>
+  <nav class="main-nav" id="mainNav" aria-label="Shop categories">
+    <ul class="container">
+      <li><a href="#categories" data-cat="Smartphones and Tablets">Smartphones and Tablets</a></li>
+      <li><a href="#categories" data-cat="Computers and Laptops">Computers and Laptops</a></li>
+      <li><a href="#categories" data-cat="TVs and Entertainment">TVs and Entertainment</a></li>
+      <li><a href="#categories" data-cat="Gaming">Gaming</a></li>
+      <li><a href="#categories" data-cat="Audio and Wearables">Audio and Wearables</a></li>
+      <li><a href="#categories" data-cat="Home Appliances">Home Appliances</a></li>
+      <li><a href="#categories" data-cat="Power and Accessories">Power and Accessories</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="pill">New season deals</p>
+        <h1>Everything Electronics, All in One Place.</h1>
+        <p>Genuine phones, laptops, TVs and gear from Apple, Samsung, HP, Sony and more, delivered across Nigeria.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#featured">Shop featured</a>
+          <a class="btn ghost" href="#flash">See flash deals</a>
+        </div>
+      </div>
+      <div class="hero-art" id="heroArt" aria-label="Featured promotion">
+        <!-- Stage 2: hero product photo -->
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="categories">
+    <div class="sec-head"><h2>Shop by category</h2></div>
+    <div class="cat-grid" id="categoryGrid"></div>
+  </section>
+
+  <section class="flash" id="flash">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Flash deals</h2>
+        <div class="countdown" id="countdown" role="timer" aria-label="Time left on flash deals">
+          <span><b id="cdH">00</b>hrs</span><span><b id="cdM">00</b>min</span><span><b id="cdS">00</b>sec</span>
+        </div>
+      </div>
+      <div class="grid" id="flashGrid" data-skeleton="4"></div>
+    </div>
+  </section>
+
+  <section class="container section" id="featured">
+    <div class="sec-head"><h2>Featured products</h2></div>
+    <div class="grid" id="featuredGrid" data-skeleton="8"></div>
+  </section>
+
+  <section class="container section">
+    <div class="promo-row">
+      <a class="promo p1" href="#bestsellers"><h3>Up to 30% off laptops</h3><span>Shop laptops</span></a>
+      <a class="promo p2" href="#new"><h3>Backup power for NEPA</h3><span>See solar and inverters</span></a>
+    </div>
+  </section>
+
+  <section class="container section" id="bestsellers">
+    <div class="sec-head"><h2>Best sellers</h2></div>
+    <div class="grid" id="bestGrid" data-skeleton="4"></div>
+  </section>
+
+  <section class="container section" id="new">
+    <div class="sec-head"><h2>New arrivals</h2></div>
+    <div class="grid" id="newGrid" data-skeleton="4"></div>
+  </section>
+
+  <section class="container section" id="recentSection" hidden>
+    <div class="sec-head"><h2>Recently viewed</h2></div>
+    <div class="grid" id="recentGrid"></div>
+  </section>
+
+  <section class="brands">
+    <div class="container">
+      <div class="sec-head"><h2>Popular brands</h2></div>
+      <div class="brand-row" id="brandRow"></div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="sec-head"><h2>What customers say</h2></div>
+    <div class="testi-grid">
+      <blockquote><p>My Galaxy arrived in Abuja in two days, sealed and with a valid warranty card.</p><cite>Amina B., Abuja</cite></blockquote>
+      <blockquote><p>The solar generator has kept my shop running through every outage this month.</p><cite>Chidi O., Enugu</cite></blockquote>
+      <blockquote><p>Good prices on HP laptops and the WhatsApp team answered within minutes.</p><cite>Tola A., Lagos</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container news-in">
+      <div><h2>Get deals before everyone else</h2><p>One email a week. No spam, unsubscribe any time.</p></div>
+      <form id="newsForm" novalidate>
+        <label class="sr" for="newsEmail">Email address</label>
+        <input id="newsEmail" type="email" placeholder="you@example.com" required>
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div><a href="#top" class="logo light">ELECTRO<span>HUB</span></a><p>Everything Electronics, All in One Place.</p></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About us</a></li><li><a href="#faq">FAQs</a></li><li><a href="#policies">Policies</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>12 Allen Avenue, Ikeja, Lagos</li><li><a href="tel:+2340000000000">+234 000 000 0000</a></li><li><a href="mailto:hello@electrohub.example">hello@electrohub.example</a></li></ul></div>
+    <div><h4>Follow us</h4><ul><li><a href="https://instagram.com" rel="noopener" target="_blank">Instagram</a></li><li><a href="https://x.com" rel="noopener" target="_blank">X</a></li><li><a href="https://facebook.com" rel="noopener" target="_blank">Facebook</a></li></ul></div>
+  </div>
+  <p class="copy">© 2026 ELECTROHUB. Demonstration store: no real payments or orders are processed.</p>
+</footer>
+
+<a class="wa" id="waBtn" href="https://wa.me/2340000000000?text=Hello%20ELECTROHUB" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">WhatsApp</a>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
